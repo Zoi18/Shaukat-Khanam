@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Shaukat Khanum Hospital</title>
+  <link rel="icon" href="logooooo.png" type="image/x-icon" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      background-image: url("bk.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    header {
+      background-color: #b30000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #7f0000;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #990000;
+      border-radius: 5px;
+    }
+
+    .container {
+      display: flex;
+      padding: 40px 5%;
+      gap: 40px;
+      max-width: 1600px;
+      margin: auto;
+    }
+
+    .sidebar {
+      flex: 2;
+      background-color: #fff0f0;
+      padding: 25px;
+      border-radius: 8px;
+      height: fit-content;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .sidebar h3 {
+      color: #b30000;
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      color: #7f0000;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    .main-content {
+      flex: 4;
+      background-color: #faf9f9;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .main-content h2 {
+      color: #b30000;
+      margin-bottom: 20px;
+    }
+
+    .main-content p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .main-content img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    #branches {
+      background-color: #ffe5e5;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #7f0000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shaukat Khanum Memorial Cancer Hospital</h1>
+    <p>Our Services</p>
+  </header>
+
+  <nav>
+  <a href="index.html">Home</a>
+    <a href="patients.html">Patients & Families</a>
+    <a href="About Us.html">About Us</a>
+    <a href="research.html">Research</a>
+    <a href="department.html">Departments</a>
+    <a href="services.html">Services</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="donate.html">Donate</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h3>Service Areas</h3>
+      <ul>
+        <li><a href="#diagnostics">Diagnostic Services</a></li>
+        <li><a href="#inpatient">Inpatient & Outpatient</a></li>
+        <li><a href="#emergency">Emergency Care</a></li>
+        <li><a href="#pharmacy">Pharmacy Services</a></li>
+        <li><a href="#telemedicine">Telemedicine</a></li>
+        <li><a href="#branches">Hospital Branches</a></li>
+      </ul>
+    </aside>
+
+    <section class="main-content">
+      <h2 id="diagnostics">Diagnostic Services</h2>
+      <img src="services.webp" alt="Diagnostic Services">
+      <p>We provide a complete range of diagnostic facilities including pathology labs, radiology (MRI, CT scan, X-rays), and nuclear medicine with expert interpretation and rapid turnaround.</p>
+
+      <h2 id="inpatient">Inpatient & Outpatient Care</h2>
+      <img src="impatient.webp" alt="Inpatient and Outpatient Services">
+      <p>Our inpatient services include private rooms and ICU facilities, while outpatient services provide consultations, follow-ups, and minor procedures in a comfortable setting.</p>
+
+      <h2 id="emergency">Emergency Services</h2>
+      <img src="emergancy.jpg" alt="Emergency Services">
+      <p>24/7 emergency services are available with trained emergency physicians and rapid response teams, ensuring timely management of critical conditions and trauma.</p>
+
+      <h2 id="pharmacy">Pharmacy Services</h2>
+      <img src="pharmacy.webp" alt="Pharmacy Services">
+      <p>Our on-site pharmacy ensures availability of cancer and supportive medicines. We maintain cold-chain logistics and offer consultation regarding medication use.</p>
+
+      <h2 id="telemedicine">Telemedicine</h2>
+      <img src="TELE-COUNSELLING-SESSIONS.webp" alt="Telemedicine Services">
+      <p>Patients from remote areas can consult our specialists through a robust telemedicine system for follow-up care and second opinions without visiting physically.</p>
+
+      <div id="branches">
+        <h2>Hospital Branches & Lab Locations</h2>
+        <img src="brancesh.jpg" alt="Hospital Branches">
+        <p><strong>SKMCH&RC Lahore:</strong><br>7A Block R-3, Johar Town, Lahore.<br>Phone: +92 42 3590 5000<br>Email: info@skm.org.pk</p>
+
+        <p><strong>SKMCH&RC Peshawar:</strong><br>Hayatabad, Phase 5, Peshawar.<br>Phone: +92 91 588 5000<br>Email: info.peshawar@skm.org.pk</p>
+
+        <p><strong>SKMCH&RC Karachi (under construction):</strong><br>Korangi Creek, Karachi.<br>Email: info.khi@skm.org.pk</p>
+
+        <p><strong>Diagnostic Labs & Collection Centres:</strong><br>Over 100 collection centers nationwide in major cities like Islamabad, Faisalabad, Gujranwala, Sialkot, Multan, Rawalpindi, Quetta, etc. Services include routine and specialized tests with online reporting and home sampling.</p>
+
+        <p>For lab inquiries:<br>Phone: 0800 11 555<br>Email: labs@skm.org.pk</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Shaukat Khanum Hospital. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Donate | Shaukat Khanum Hospital</title>
+  <link rel="icon" href="logooooo.png" type="image/x-icon" />
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: url("bk.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    header {
+      background-color: #b30000;
+      color: white;
+      padding: 5px 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    nav {
+      background-color: #7f0000;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color:  #d30c0c;
+      border-radius: 5px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .container h2 {
+      color: #7f0000;
+      margin-bottom: 20px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .donation-info {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .qr-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .qr-box {
+      text-align: center;
+    }
+
+    .qr-box img {
+      width: 150px;
+      height: 150px;
+      border-radius: 8px;
+    }
+
+    .report-section {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+
+    .report-box {
+      text-align: center;
+    }
+
+    .report-box img {
+      width: 120px;
+      height: 140px;
+      margin-bottom: 10px;
+      border-radius: 8px; 
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+      transition: transform 0.3s ease;
+    }
+
+    .report-box img:hover{
+         transform: scale(1.5);
+    }
+
+    .collapsible {
+      background-color: #b30000;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      margin-top: 30px;
+    }
+
+    .content {
+      padding: 15px;
+      display: none;
+      overflow: hidden;
+      background-color: #ffe5e5;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #7f0000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .qr-section,
+      .report-section {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shaukat Khanum Memorial Cancer Hospital</h1>
+    <h3>Donate</h3>
+  </header>
+
+  <nav>
+ <a href="index.html">Home</a>
+    <a href="patients.html">Patients & Families</a>
+    <a href="About Us.html">About Us</a>
+    <a href="research.html">Research</a>
+    <a href="department.html">Departments</a>
+    <a href="services.html">Services</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="donate.html">Donate</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Support Our Mission</h2>
+    <div class="donation-info">
+      <p>Every contribution helps us bring free cancer treatment to those who need it most. You can make an online donation securely through our payment partners or scan one of the QR codes below for quick mobile giving.</p>
+      <p>Your donation supports treatment, research, equipment, and expansion of our facilities across Pakistan.</p>
+    </div>
+
+    <div class="qr-section">
+      <div class="qr-box">
+        <img src="qr1.png" alt="Bank QR">
+        <h3>Bank Transfer</h3>
+      </div>
+      <div class="qr-box">
+        <img src="qr2.png" alt="Mobile Wallet QR">
+        <h3>Mobile Wallet</h3>
+      </div>
+    </div>
+
+    <h2>Transparency & Annual Reports</h2>
+    <p style="text-align: center;">Download our official audited reports to understand how your donations make a difference.</p>
+    <br>
+
+    <div class="report-section">
+      <div class="report-box">
+        <a href="Annual Report 2021.pdf" target="_blank">
+          <img src="report 2021.png" alt="2021 Report">
+          <h4 style="color: #7f0000; text-decoration: underline;"><b>Annual Report 2021</b></h4>
+        </a>
+      </div>
+      <div class="report-box">
+        <a href="Annual Report 2022.pdf" target="_blank">
+          <img src="report 2022.png" alt="2022 Report">
+          <h4 style="color: #7f0000; text-decoration: underline;"><b>Annual Report 2022</b></h4>
+        </a>
+      </div>
+      <div class="report-box">
+        <a href="Annual Report 2023.pdf" target="_blank">
+          <img src="report 2023.png" alt="2023 Report">
+          <h4 style="color: #7f0000; text-decoration: underline;"><b>Annual Report 2023</b></h4>
+        </a>
+      </div>
+    </div>
+
+    <button class="collapsible">View More About Our Financial Practices</button>
+    <div class="content">
+      <p>
+        Shaukat Khanum Memorial Trust is committed to transparency and integrity. Our independent financial audits are publicly accessible and provide a comprehensive view of how funds are allocated and spent. We ensure your Zakat and donations are used responsibly for patient care, research, and hospital development.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Shaukat Khanum Hospital. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach(btn => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+</body>
+</html>

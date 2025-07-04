@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaukat Khanum Memorial Hospital</title>
+  <link rel="icon" href="logooooo.png" type="image/x-icon" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      background-image: url("bk.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+   header {
+  background-color: #b30000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex; /* Use flex to align items horizontally */
+  align-items: center; /* Vertically center the items */
+  justify-content: center; /* Center items horizontally, optional if you want to keep centered */
+}
+    nav {
+      background-color: #7f0000;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #990000;
+      border-radius: 5px;
+    }
+
+    .hero {
+      position: relative;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      font-size: 2.5em;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1400px;
+      margin: auto;
+      background-color: #faf9f9;
+    }
+
+    .container h2 {
+      color: #b30000;
+      margin-bottom: 20px;
+    }
+
+    .about-image {
+      float: right;
+      width: 300px;
+      margin-left: 20px;
+      border-radius: 10px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      background-color: #ffe5e5;
+      padding: 80px;
+      margin: 10px;
+      border-radius: 8px;
+      flex: 2;
+      min-width: 200px;
+      text-align: center;
+    }
+
+    .collapsible {
+      background-color: #b30000;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      margin-top: 30px;
+    }
+
+    .collapsible:hover {
+      background-color: #990000;
+    }
+
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 40px;
+      gap: 20px;
+    }
+
+    .feature {
+      flex: 1;
+      min-width: 250px;
+      background-color: #fff0f0;
+      border-left: 5px solid #b30000;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .gallery {
+      margin-top: 35px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 32%;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #7f0000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .about-image {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 100%;
+      }
+
+      .gallery img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logooooo.png" alt="Shaukat Khanum Memorial Cancer Hospital Logo" style="height: 50px; margin-right: 15px;">
+    <h1>Shaukat Khanum Memorial Cancer Hospital</h1>
+    <p>Hope. Healing. Humanity.</p>
+   
+  
+  
+
+  </header>
+
+  <nav>
+   <a href="index.html">Home</a>
+    <a href="patients.html">Patients & Families</a>
+    <a href="About Us.html">About Us</a>
+    <a href="research.html">Research</a>
+    <a href="department.html">Departments</a>
+    <a href="services.html">Services</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="donate.html">Donate</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Providing free cancer care to those who need it most</h1>
+  </section>
+
+  <section class="container">
+    <h2>History and Vision</h2>
+    <p>
+      The dream of establishing a cancer hospital in Pakistan began when Imran Khan's mother died of cancer in 1985. It led to the vision of building a hospital where even the poorest could get high-quality cancer treatment. The first hospital opened in Lahore in 1994, with expansions in Peshawar and Karachi.
+    </p>
+  </section>
+
+  <section class="container" id="about">
+    <h2>Patients & Families</h2>
+    <img src="ik.jpg" alt="Imran Khan Founder" class="about-image" />
+    <p>
+      Shaukat Khanum provides extensive care and emotional support for patients and their families. Our aim is to make each patient's journey as comfortable and hopeful as possible with free or subsidized services, treatment guidance, and post-treatment support.
+    </p>
+
+    <div class="stats">
+      <div class="stat">
+        <h3>2 Million+</h3>
+        <p>Cancer Patients Cared For</p>
+      </div>
+      <div class="stat">
+        <h3>75%</h3>
+        <p>Patients Treated Without Cost</p>
+      </div>
+      <div class="stat">
+        <h3>3 Cities</h3>
+        <p>Nationwide Hospital Presence</p>
+      </div>
+    </div>
+
+    <button class="collapsible">Read More About Our Mission</button>
+    <div class="content">
+      <p>
+        The hospital’s mission is to alleviate the suffering of cancer patients through the latest methods of curative and palliative therapy regardless of financial status.
+      </p>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Healthcare Professionals</h3>
+        <p>SKMCH&RC trains doctors, nurses, and paramedics in oncology care, providing continual medical education and clinical exposure in advanced cancer therapies.</p>
+      </div>
+      <div class="feature">
+        <h3>Research & Innovation</h3>
+        <p>Our dedicated research wing works on cancer diagnostics, clinical trials, and public awareness, helping find innovative ways to fight cancer in Pakistan.</p>
+      </div>
+      <div class="feature">
+        <h3>Free & Subsidized Care</h3>
+        <p>Over 75% of our patients receive treatment without cost, thanks to community and donor support.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <img src="professionals.webp" alt="Our Doctor">
+      <img src="invoations.jpg" alt="Donation Campaign">
+      <img src="care.webp" alt="Cancer Awareness Seminar">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shaukat Khanum Hospital. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach(btn => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+

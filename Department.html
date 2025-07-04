@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Departments - Shaukat Khanum Hospital</title>
+  <link rel="icon" href="logooooo.png" type="image/x-icon" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      background-image: url("bk.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    header {
+      background-color: #b30000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #7f0000;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #990000;
+      border-radius: 5px;
+    }
+
+    .container {
+      padding: 60px 5%;
+      width: 100%;
+      max-width: 1600px;
+      margin: auto;
+      background-color: #faf9f9;
+    }
+
+    .department {
+      margin-bottom: 60px;
+      background-color: #fff8f8;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .department img, .department video {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .department h2 {
+      color: #b30000;
+      margin-bottom: 10px;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    .pdf-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #b30000;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .pdf-link:hover {
+      background-color: #990000;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white;
+      overflow-y: auto;
+      padding: 40px;
+      z-index: 1000;
+    }
+
+    .overlay h2 {
+      color: #ffcccc;
+      margin-bottom: 20px;
+    }
+
+    .overlay p, .overlay li {
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #7f0000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shaukat Khanum Memorial Cancer Hospital</h1>
+    <p>Departments Overview</p>
+  </header>
+
+  <nav>
+  <a href="index.html">Home</a>
+    <a href="patients.html">Patients & Families</a>
+    <a href="About Us.html">About Us</a>
+    <a href="research.html">Research</a>
+    <a href="department.html">Departments</a>
+    <a href="services.html">Services</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="donate.html">Donate</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="container">
+    <div class="department">
+      <h2 onclick="openOverlay()">Oncology</h2>
+      <p>SKMCH&RC provides medical, radiation, and surgical oncology with a multidisciplinary approach. Treatments are supported by state-of-the-art technology and compassionate care teams.</p>
+      <img src="Surgical-Oncology2.webp" alt="Oncology Department">
+      <a href="https://shaukatkhanum.org.pk/clinical-services/medical-oncology-at-skmchrc-lahore/" class="pdf-link" >Access to read about Oncology Brochure</a>
+    </div>
+
+ <div class="department">
+  <h2>Radiology</h2>
+  <p>Our radiology department is equipped with MRI, CT, PET scans, and digital x-ray for precise diagnostics. We ensure high-quality imaging and timely reports to support effective treatments.</p>
+
+  <!-- Embedded YouTube Video -->
+  <div style="margin-top: 20px; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px;">
+    <iframe
+      src="https://www.youtube.com/embed/6GNtB9XK9Yk"
+      title="Radiology Overview"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    </iframe>
+  </div>
+
+  <a href="Guidelines-to-Clinical-Practices-in-Radiology.pdf" class="pdf-link" target="_blank">View Radiology Guide (PDF)</a>
+</div>
+
+
+    <div class="department">
+      <h2>Laboratories</h2>
+      <p>Comprehensive pathology services including hematology, biochemistry, microbiology, and histopathology. Our labs are accredited and ensure high standards of accuracy and safety.</p>
+      <img src="labs.webp"Lab Services">
+    </div>
+
+   <div class="department">
+  <h2>Surgery</h2>
+  <p>Advanced surgical units for tumor removals and cancer-related procedures with post-operative care. Our surgeons work closely with oncologists and radiologists to offer integrated care plans.</p>
+
+  <!-- Image Cards -->
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+    <div style="flex: 1; min-width: 250px; background: #fff0f0; padding: 15px; border-radius: 10px;">
+      <img src="tumor.jpg" alt="Tumor Removal" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
+      <p><strong>Tumor Removal:</strong> State-of-the-art surgical procedures for removing malignant tumors with precision.</p>
+    </div>
+
+    <div style="flex: 1; min-width: 250px; background: #fff0f0; padding: 15px; border-radius: 10px;">
+      <img src="posttt.jpg" alt="Post-operative Care" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
+      <p><strong>Post-operative Care:</strong> Specialized support and monitoring for faster patient recovery.
+      Palliative care nurses specialise in comforting patients and their family members during one of the most difficult phases of life. They are trained to provide holistic care to patients receiving palliative care. They assist the palliative care physicians in providing the best possible care to patients</p>
+    </div>
+
+    <div style="flex: 1; min-width: 250px; background: #fff0f0; padding: 15px; border-radius: 10px;">
+      <img src="collaborations.png" alt="Team Collaboration" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
+      <p><strong>Team Collaboration:</strong> Multidisciplinary approach with oncologists and radiologists to enhance treatment effectiveness.Team collaboration in healthcare is built on essential components like communication, trust, and conflict resolution. Interprofessional collaboration further amplifies these values, bringing together diverse expertise to tackle challenges head-on
+      </p>
+    </div>
+  </div>
+</div>
+
+
+    <div class="department">
+      <h2>Pediatrics</h2>
+      <p>Specialized pediatric oncology services with child-friendly environments and tailored treatment plans. We ensure emotional and medical support for both children and their families.</p>
+      <img src="pedia.jpg" alt="Pediatric Oncology">
+      <a href="https://shaukatkhanum.org.pk/patients-families/find-a-doctor/paediatric-oncology-lahore/" class="pdf-link" target="_blank">Learn More About Pediatric Oncology (PDF)</a>
+    </div>
+  </section>
+
+  <div id="oncologyOverlay" class="overlay">
+    <span class="close-btn" onclick="closeOverlay()">&times;</span>
+    <h2>Department of Surgical Oncology</h2>
+    <p>The Department of Surgical Oncology at SKMCH&RC offers comprehensive evaluation, diagnosis, and management of adult and pediatric cancer patients. Our specialties include:</p>
+    <ul>
+      <li><strong>Gastrointestinal Surgery:</strong> Minimally invasive procedures like laparoscopic oesophageal, gastric, rectal resections, colectomies, and Whipple procedure.</li>
+      <li><strong>Maxillofacial/Head and Neck:</strong> Treatment for cancers, trauma, restorative dentistry, and deformities.</li>
+      <li><strong>Breast Surgery:</strong> Lumpectomies, mastectomies, reconstructions, and oncoplastic procedures.</li>
+      <li><strong>Gynae-oncology, Uro-oncology:</strong> Including fertility preservation and cystectomies.</li>
+      <li><strong>Ortho/Neuro/Pediatric/Thoracic/Plastic Surgery:</strong> Advanced tumour resections and reconstructive procedures.</li>
+    </ul>
+    <p><strong>Training:</strong> Accredited fellowships and residencies offered in general surgery, breast surgery, paediatrics, neuro-oncology, and more. Programmes include CPSP-recognized training and hospital-based fellowships.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Shaukat Khanum Hospital. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function openOverlay() {
+      document.getElementById('oncologyOverlay').style.display = 'block';
+    }
+
+    function closeOverlay() {
+      document.getElementById('oncologyOverlay').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

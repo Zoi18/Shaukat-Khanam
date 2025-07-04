@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Guide | Shaukat Khanum Hospital</title>
+  <link rel="icon" href="logooooo.png" type="image/x-icon" />
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: url("bk.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    header {
+      background-color: #b30000;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #7f0000;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #d30c0c;
+      border-radius: 5px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #7f0000;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h3 {
+      color: #b30000;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .section p, ul {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .collapsible {
+      background-color: #b30000;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .content {
+      display: none;
+      padding: 15px;
+      background-color: #ffe5e5;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #7f0000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shaukat Khanum Memorial Cancer Hospital</h1>
+    <h3>Patient Guide</h3>
+  </header>
+
+  <nav>
+   <a href="index.html">Home</a>
+    <a href="patients.html">Patients & Families</a>
+    <a href="About Us.html">About Us</a>
+    <a href="research.html">Research</a>
+    <a href="department.html">Departments</a>
+    <a href="services.html">Services</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="donate.html">Donate</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Your Guide to Care at SKMCH&RC</h2>
+
+    <div class="section">
+      <h3>Admissions</h3>
+      <p>Patients are admitted after a consultation with our specialists. Please bring the following:</p>
+      <ul>
+        <li>Original CNIC or B-Form (for minors)</li>
+        <li>Medical history and diagnostic reports</li>
+        <li>Referral letter (if applicable)</li>
+      </ul>
+      <p>Admissions are based on medical urgency and availability of services. Our Admission Desk is open 24/7.</p>
+    </div>
+
+    <div class="section">
+      <h3>Appointments</h3>
+      <p>You can book appointments through:</p>
+      <ul>
+        <li>Phone: 0800 11555</li>
+        <li>Online portal: <a href="https://shaukatkhanum.org.pk" target="_blank">shaukatkhanum.org.pk</a></li>
+        <li>In-person at our OPD counters</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Financial Assistance</h3>
+      <p>We provide financial evaluation for those who cannot afford treatment. 75% of our patients receive free or subsidized care. Speak with our Social Welfare Office to apply for assistance.</p>
+    </div>
+
+    <div class="section">
+      <h3>Facilities Available</h3>
+      <ul>
+        <li>Private and General Wards</li>
+        <li>Advanced Diagnostic Imaging (MRI, CT, PET)</li>
+        <li>Laboratory & Pathology Services</li>
+        <li>Cafeteria, Prayer Rooms, and Parking</li>
+        <li>Wheelchair and interpreter support</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Visitor Guidelines</h3>
+      <p>We understand the importance of family presence. Please follow these guidelines:</p>
+      <ul>
+        <li>One visitor allowed during designated hours (10:00 AM – 12:00 PM and 5:00 PM – 7:00 PM)</li>
+        <li>Sanitize hands and wear a mask inside patient areas</li>
+        <li>Do not bring outside food</li>
+      </ul>
+    </div>
+
+    <button class="collapsible">Frequently Asked Questions (FAQs)</button>
+    <div class="content">
+      <p><strong>Q: Can I get treated without a referral?</strong><br>Yes. You may visit the hospital directly or call to book an appointment.</p>
+      <p><strong>Q: Is financial help available?</strong><br>Yes, based on an eligibility assessment, patients may receive free treatment.</p>
+      <p><strong>Q: Can I consult online?</strong><br>Online consultation is available for some services. Please call the helpline to confirm.</p>
+      <p><strong>Q: How do I get a follow-up appointment?</strong><br>Follow-ups can be booked through the patient portal, phone, or in person at the OPD desk.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Shaukat Khanum Hospital. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach(btn => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+</body>
+</html>
